@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using MemoryManagementApp.Services;
 
-namespace MemoryManagementApp.Forms
+namespace MemoryManagementApp
 {
     public partial class MainForm : Form
     {
@@ -32,6 +32,11 @@ namespace MemoryManagementApp.Forms
                 _dynamicService.AddNodeDynamic(data);
                 MessageBox.Show($"Nodo alojado en el Heap. Total nodos: {_dynamicService.GetNodeCount()}");
             }
+        }
+
+        private void txtNewSize_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
